@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Lab Notes - Deauty Labs</title>
+  <meta name="description" content="Where Deauty Labs publishes research notes, system breakdowns, experiments, and engineering decisions." />
+  <link rel="icon" href="assets/deauty-labs-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="lang-en">
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-symbol" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M27 10H13V26M13 38V54H27" fill="none" stroke="#EDF1F5" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M34 10H42L54 22V42L42 54H34" fill="none" stroke="#B9FF66" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+        </svg>
+        Deauty <span>Labs</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="practice.html"><span data-lang="en">Practice</span><span data-lang="es">Práctica</span></a></li>
+        <li><a href="critical.html"><span data-lang="en">Critical Systems</span><span data-lang="es">Sistemas Críticos</span></a></li>
+        <li><a href="cloud.html"><span data-lang="en">Cloud</span><span data-lang="es">Cloud</span></a></li>
+        <li><a href="research.html"><span data-lang="en">Research</span><span data-lang="es">Research</span></a></li>
+        <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+        <li><a href="collaborate.html"><span data-lang="en">Collaborate</span><span data-lang="es">Colaborar</span></a></li>
+        <li><a class="active" href="notes.html"><span data-lang="en">Notes</span><span data-lang="es">Notas</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div id="lang-toggle">
+          <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+          <button id="btn-es" onclick="setLang('es')">ES</button>
+        </div>
+        <a class="nav-cta" href="contact.html"><span data-lang="en">Bring us a hard problem</span><span data-lang="es">Traenos un problema difícil</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container page-nav">
+    <a class="back-link" href="index.html">&larr; <span data-lang="en">Back to home</span><span data-lang="es">Volver al inicio</span></a>
+  </div>
+
+  <main>
+    <section id="notes">
+      <div class="container notes-grid">
+        <div class="reveal">
+          <div class="eyebrow"><span data-lang="en">Open lab notes</span><span data-lang="es">Notas abiertas del laboratorio</span></div>
+          <h2 class="section-title"><span data-lang="en">We publish how we think, test, and build.</span><span data-lang="es">Publicamos cómo pensamos, probamos y construimos.</span></h2>
+          <p class="section-lead"><span data-lang="en">Research notes, system breakdowns, experiments, and engineering decisions. The work becomes more useful when it can be examined and discussed.</span><span data-lang="es">Notas de research, análisis de sistemas, experimentos y decisiones de ingeniería. El trabajo se vuelve más útil cuando puede examinarse y discutirse.</span></p>
+        </div>
+        <div class="channel-list reveal">
+          <div class="channel"><b>01</b><strong>YouTube</strong><span><span data-lang="en">Experiments and builds</span><span data-lang="es">Experimentos y builds</span></span></div>
+          <div class="channel"><b>02</b><strong>LinkedIn</strong><span><span data-lang="en">Field notes and decisions</span><span data-lang="es">Notas y decisiones</span></span></div>
+          <div class="channel"><b>03</b><strong><span data-lang="en">Technical Notes</span><span data-lang="es">Notas Técnicas</span></strong><span><span data-lang="en">Deep dives and evidence</span><span data-lang="es">Análisis y evidencia</span></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>Deauty Labs / Applied Research and Critical Systems</span>
+      <span>© 2026 Deauty Labs</span>
+      <a href="mailto:hello@deauty.tech">hello@deauty.tech</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

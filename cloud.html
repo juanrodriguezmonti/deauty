@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud &amp; Infrastructure - Deauty Labs</title>
+  <meta name="description" content="Deauty Labs is an AWS-first cloud engineering team: compute, serverless, data, networking, observability, security, compliance, scalability, and cost monitoring." />
+  <link rel="icon" href="assets/deauty-labs-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="lang-en">
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-symbol" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M27 10H13V26M13 38V54H27" fill="none" stroke="#EDF1F5" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M34 10H42L54 22V42L42 54H34" fill="none" stroke="#B9FF66" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+        </svg>
+        Deauty <span>Labs</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="practice.html"><span data-lang="en">Practice</span><span data-lang="es">Práctica</span></a></li>
+        <li><a href="critical.html"><span data-lang="en">Critical Systems</span><span data-lang="es">Sistemas Críticos</span></a></li>
+        <li><a class="active" href="cloud.html"><span data-lang="en">Cloud</span><span data-lang="es">Cloud</span></a></li>
+        <li><a href="research.html"><span data-lang="en">Research</span><span data-lang="es">Research</span></a></li>
+        <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+        <li><a href="collaborate.html"><span data-lang="en">Collaborate</span><span data-lang="es">Colaborar</span></a></li>
+        <li><a href="notes.html"><span data-lang="en">Notes</span><span data-lang="es">Notas</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div id="lang-toggle">
+          <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+          <button id="btn-es" onclick="setLang('es')">ES</button>
+        </div>
+        <a class="nav-cta" href="contact.html"><span data-lang="en">Bring us a hard problem</span><span data-lang="es">Traenos un problema difícil</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container page-nav">
+    <a class="back-link" href="index.html">&larr; <span data-lang="en">Back to home</span><span data-lang="es">Volver al inicio</span></a>
+  </div>
+
+  <main>
+    <section id="cloud">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow"><span data-lang="en">Cloud &amp; infrastructure</span><span data-lang="es">Cloud e infraestructura</span></div>
+          <h2 class="section-title"><span data-lang="en">AWS-first infrastructure, built to scale and to explain itself.</span><span data-lang="es">Infraestructura AWS-first, pensada para escalar y explicarse a sí misma.</span></h2>
+          <p class="section-lead"><span data-lang="en">We design, deploy, and operate infrastructure primarily on AWS &mdash; from serverless APIs to containerized platforms &mdash; with security, compliance, and cost as first-class requirements, not afterthoughts.</span><span data-lang="es">Diseñamos, desplegamos y operamos infraestructura principalmente sobre AWS &mdash; desde APIs serverless hasta plataformas en contenedores &mdash; con seguridad, compliance y costos como requisitos de primera clase, no algo posterior.</span></p>
+        </div>
+
+        <div class="practice-grid reveal">
+          <article class="practice-item">
+            <span class="practice-index">STACK / 01</span>
+            <h3><span data-lang="en">Compute &amp; Serverless</span><span data-lang="es">Compute y Serverless</span></h3>
+            <p><span data-lang="en">EC2 and ECS/Fargate for long-running workloads, Lambda for event-driven and spiky traffic. We choose the right compute model per workload instead of defaulting to one.</span><span data-lang="es">EC2 y ECS/Fargate para cargas de trabajo persistentes, Lambda para tráfico basado en eventos y picos. Elegimos el modelo de cómputo correcto según la carga, no un default único.</span></p>
+            <div class="practice-tags"><span class="tag">EC2</span><span class="tag">Lambda</span><span class="tag">ECS / Fargate</span></div>
+          </article>
+          <article class="practice-item">
+            <span class="practice-index">STACK / 02</span>
+            <h3><span data-lang="en">APIs &amp; API Gateway</span><span data-lang="es">APIs y API Gateway</span></h3>
+            <p><span data-lang="en">REST and HTTP APIs on API Gateway in front of Lambda or containerized services, with throttling, authorizers, and usage plans configured deliberately.</span><span data-lang="es">APIs REST y HTTP sobre API Gateway frente a Lambda o servicios en contenedores, con throttling, authorizers y usage plans configurados con criterio.</span></p>
+            <div class="practice-tags"><span class="tag">API Gateway</span><span class="tag">Authorizers</span><span class="tag">Throttling</span></div>
+          </article>
+          <article class="practice-item">
+            <span class="practice-index">STACK / 03</span>
+            <h3><span data-lang="en">Data &amp; Storage</span><span data-lang="es">Datos y Almacenamiento</span></h3>
+            <p><span data-lang="en">RDS/Aurora for relational workloads, DynamoDB for high-throughput key-value access, S3 with lifecycle policies and CloudFront for delivery.</span><span data-lang="es">RDS/Aurora para cargas relacionales, DynamoDB para acceso key-value de alto throughput, S3 con políticas de ciclo de vida y CloudFront para distribución.</span></p>
+            <div class="practice-tags"><span class="tag">RDS / Aurora</span><span class="tag">DynamoDB</span><span class="tag">S3 / CloudFront</span></div>
+          </article>
+          <article class="practice-item">
+            <span class="practice-index">STACK / 04</span>
+            <h3><span data-lang="en">Networking &amp; Identity</span><span data-lang="es">Networking e Identidad</span></h3>
+            <p><span data-lang="en">VPC design with private subnets and least-privilege IAM by default &mdash; every role and every service boundary is deliberate, not inherited.</span><span data-lang="es">Diseño de VPC con subredes privadas e IAM de mínimo privilegio por defecto &mdash; cada rol y cada límite de servicio es deliberado, no heredado.</span></p>
+            <div class="practice-tags"><span class="tag">VPC</span><span class="tag">IAM</span><span class="tag">KMS</span></div>
+          </article>
+          <article class="practice-item">
+            <span class="practice-index">STACK / 05</span>
+            <h3><span data-lang="en">Observability</span><span data-lang="es">Observabilidad</span></h3>
+            <p><span data-lang="en">CloudWatch metrics, logs, and alarms plus distributed tracing with X-Ray, so incidents are diagnosed with evidence, not guesswork.</span><span data-lang="es">Métricas, logs y alarmas de CloudWatch más tracing distribuido con X-Ray, para diagnosticar incidentes con evidencia, no con conjeturas.</span></p>
+            <div class="practice-tags"><span class="tag">CloudWatch</span><span class="tag">X-Ray</span><span class="tag">Alarms</span></div>
+          </article>
+          <article class="practice-item">
+            <span class="practice-index">STACK / 06</span>
+            <h3><span data-lang="en">Infrastructure as Code &amp; CI/CD</span><span data-lang="es">Infrastructure as Code y CI/CD</span></h3>
+            <p><span data-lang="en">CloudFormation and CDK for reproducible infrastructure, GitHub Actions pipelines with security testing gates before every deploy.</span><span data-lang="es">CloudFormation y CDK para infraestructura reproducible, pipelines de GitHub Actions con gates de testing de seguridad antes de cada deploy.</span></p>
+            <div class="practice-tags"><span class="tag">CDK</span><span class="tag">CloudFormation</span><span class="tag">CI/CD</span></div>
+          </article>
+          <article class="practice-item">
+            <span class="practice-index">STACK / 07</span>
+            <h3><span data-lang="en">Messaging &amp; Orchestration</span><span data-lang="es">Mensajería y Orquestación</span></h3>
+            <p><span data-lang="en">SQS and SNS for decoupled communication, EventBridge for event routing, Step Functions for orchestrating multi-step workflows reliably.</span><span data-lang="es">SQS y SNS para comunicación desacoplada, EventBridge para ruteo de eventos, Step Functions para orquestar flujos de múltiples pasos de forma confiable.</span></p>
+            <div class="practice-tags"><span class="tag">SQS / SNS</span><span class="tag">EventBridge</span><span class="tag">Step Functions</span></div>
+          </article>
+          <article class="practice-item">
+            <span class="practice-index">STACK / 08</span>
+            <h3><span data-lang="en">Cost Monitoring &amp; FinOps</span><span data-lang="es">Monitoreo de Costos y FinOps</span></h3>
+            <p><span data-lang="en">Cost Explorer, Budgets, and tagging strategy from day one, plus right-sizing and Savings Plans reviews so cost scales with usage, not surprise.</span><span data-lang="es">Cost Explorer, Budgets y estrategia de tagging desde el día uno, más revisiones de right-sizing y Savings Plans para que el costo escale con el uso, no con sorpresas.</span></p>
+            <div class="practice-tags"><span class="tag">Cost Explorer</span><span class="tag">Budgets</span><span class="tag">Savings Plans</span></div>
+          </article>
+        </div>
+
+        <div class="critical-grid" style="margin-top:100px;">
+        <div class="critical-copy reveal">
+          <div class="eyebrow"><span data-lang="en">Where it matters most</span><span data-lang="es">Donde más importa</span></div>
+          <h2 class="section-title"><span data-lang="en">Security, compliance, scalability, and cost &mdash; by design.</span><span data-lang="es">Seguridad, compliance, escalabilidad y costo &mdash; por diseño.</span></h2>
+          <ul class="critical-list">
+            <li><b>01</b><span><strong><span data-lang="en">Security &amp; compliance</span><span data-lang="es">Seguridad y compliance</span></strong><span data-lang="en">IAM least privilege, encryption at rest and in transit, VPC segmentation, GuardDuty and Security Hub, WAF in front of public endpoints. We map controls to frameworks like SOC 2 and ISO 27001 when compliance is part of the requirement.</span><span data-lang="es">IAM de mínimo privilegio, cifrado en reposo y en tránsito, segmentación de VPC, GuardDuty y Security Hub, WAF frente a endpoints públicos. Mapeamos controles a frameworks como SOC 2 e ISO 27001 cuando el compliance es parte del requisito.</span></span></li>
+            <li><b>02</b><span><strong><span data-lang="en">Scalability &amp; resilience</span><span data-lang="es">Escalabilidad y resiliencia</span></strong><span data-lang="en">Auto-scaling groups, multi-AZ deployments, serverless-first for unpredictable load, caching and CDN at the edge. Systems are designed to absorb spikes without paging anyone.</span><span data-lang="es">Auto-scaling groups, despliegues multi-AZ, serverless-first para carga impredecible, caching y CDN en el borde. Los sistemas están diseñados para absorber picos sin despertar a nadie.</span></span></li>
+            <li><b>03</b><span><strong><span data-lang="en">Cost monitoring &amp; FinOps</span><span data-lang="es">Monitoreo de costos y FinOps</span></strong><span data-lang="en">Budgets and anomaly alerts from the first deploy, resource tagging for attribution, regular right-sizing, and Reserved/Savings Plans reviews. Cost visibility is a deliverable, not an afterthought.</span><span data-lang="es">Budgets y alertas de anomalías desde el primer deploy, tagging de recursos para atribución, right-sizing regular y revisiones de Reserved/Savings Plans. La visibilidad de costos es un entregable, no algo posterior.</span></span></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <div class="assurance-board">
+            <div class="board-title"><span>CLOUD_ASSURANCE</span><span>REV_06.26</span></div>
+            <div class="assurance-row"><span class="assurance-name"><span data-lang="en">Security</span><span data-lang="es">Seguridad</span></span><span class="assurance-track"><i style="width:94%"></i></span><span class="assurance-state">HARDENED</span></div>
+            <div class="assurance-row"><span class="assurance-name"><span data-lang="en">Compliance</span><span data-lang="es">Compliance</span></span><span class="assurance-track"><i style="width:88%"></i></span><span class="assurance-state">MAPPED</span></div>
+            <div class="assurance-row"><span class="assurance-name"><span data-lang="en">Scalability</span><span data-lang="es">Escalabilidad</span></span><span class="assurance-track"><i style="width:91%"></i></span><span class="assurance-state">ELASTIC</span></div>
+            <div class="assurance-row"><span class="assurance-name"><span data-lang="en">Cost control</span><span data-lang="es">Control de costos</span></span><span class="assurance-track"><i style="width:85%"></i></span><span class="assurance-state">TRACKED</span></div>
+            <div class="assurance-row"><span class="assurance-name"><span data-lang="en">Observability</span><span data-lang="es">Observabilidad</span></span><span class="assurance-track"><i style="width:93%"></i></span><span class="assurance-state">INSTRUMENTED</span></div>
+          </div>
+          <p class="boundary"><strong><span data-lang="en">Multi-cloud note:</span><span data-lang="es">Nota multi-cloud:</span></strong> <span data-lang="en">AWS is our primary platform, but we are not locked into it. We work with GCP and Azure when existing infrastructure, client requirements, or specific managed services make that the right call.</span><span data-lang="es">AWS es nuestra plataforma principal, pero no estamos atados a ella. Trabajamos con GCP y Azure cuando la infraestructura existente, los requisitos del cliente o servicios administrados específicos hacen que sea la decisión correcta.</span></p>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>Deauty Labs / Applied Research and Critical Systems</span>
+      <span>© 2026 Deauty Labs</span>
+      <a href="mailto:hello@deauty.tech">hello@deauty.tech</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

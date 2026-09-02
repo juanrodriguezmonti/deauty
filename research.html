@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research to Production - Deauty Labs</title>
+  <meta name="description" content="How Deauty Labs turns experiments into evidence and evidence into reliable engineering, plus our current research directions." />
+  <link rel="icon" href="assets/deauty-labs-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="lang-en">
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-symbol" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M27 10H13V26M13 38V54H27" fill="none" stroke="#EDF1F5" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M34 10H42L54 22V42L42 54H34" fill="none" stroke="#B9FF66" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+        </svg>
+        Deauty <span>Labs</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="practice.html"><span data-lang="en">Practice</span><span data-lang="es">Práctica</span></a></li>
+        <li><a href="critical.html"><span data-lang="en">Critical Systems</span><span data-lang="es">Sistemas Críticos</span></a></li>
+        <li><a href="cloud.html"><span data-lang="en">Cloud</span><span data-lang="es">Cloud</span></a></li>
+        <li><a class="active" href="research.html"><span data-lang="en">Research</span><span data-lang="es">Research</span></a></li>
+        <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+        <li><a href="collaborate.html"><span data-lang="en">Collaborate</span><span data-lang="es">Colaborar</span></a></li>
+        <li><a href="notes.html"><span data-lang="en">Notes</span><span data-lang="es">Notas</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div id="lang-toggle">
+          <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+          <button id="btn-es" onclick="setLang('es')">ES</button>
+        </div>
+        <a class="nav-cta" href="contact.html"><span data-lang="en">Bring us a hard problem</span><span data-lang="es">Traenos un problema difícil</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container page-nav">
+    <a class="back-link" href="index.html">&larr; <span data-lang="en">Back to home</span><span data-lang="es">Volver al inicio</span></a>
+  </div>
+
+  <main>
+    <section id="research">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow"><span data-lang="en">Research to production</span><span data-lang="es">De research a producción</span></div>
+          <h2 class="section-title"><span data-lang="en">Experiments are useful when they change what we know.</span><span data-lang="es">Los experimentos son útiles cuando cambian lo que sabemos.</span></h2>
+          <p class="section-lead"><span data-lang="en">We structure experimental work to produce evidence, expose limitations, and create a credible path to production when the results justify it.</span><span data-lang="es">Estructuramos el trabajo experimental para producir evidencia, exponer limitaciones y crear un camino creíble a producción cuando los resultados lo justifican.</span></p>
+        </div>
+        <div class="research-flow reveal">
+          <div class="research-step"><b>01 / QUESTION</b><h3><span data-lang="en">Frame the unknown</span><span data-lang="es">Definir la incógnita</span></h3><p><span data-lang="en">Make assumptions, constraints, and success criteria explicit.</span><span data-lang="es">Hacer explícitos supuestos, restricciones y criterios de éxito.</span></p></div>
+          <div class="research-step"><b>02 / EXPERIMENT</b><h3><span data-lang="en">Build to learn</span><span data-lang="es">Construir para aprender</span></h3><p><span data-lang="en">Create the smallest system that can generate useful evidence.</span><span data-lang="es">Crear el sistema mínimo que pueda generar evidencia útil.</span></p></div>
+          <div class="research-step"><b>03 / EVIDENCE</b><h3><span data-lang="en">Evaluate honestly</span><span data-lang="es">Evaluar con honestidad</span></h3><p><span data-lang="en">Measure outcomes, failure cases, costs, and operational constraints.</span><span data-lang="es">Medir resultados, fallas, costos y restricciones operativas.</span></p></div>
+          <div class="research-step"><b>04 / SYSTEM</b><h3><span data-lang="en">Engineer the path</span><span data-lang="es">Diseñar el camino</span></h3><p><span data-lang="en">Harden the valid idea into an observable, maintainable system.</span><span data-lang="es">Convertir la idea válida en un sistema observable y mantenible.</span></p></div>
+        </div>
+        <div class="directions reveal">
+          <article class="direction"><small>Research direction / 01</small><h3><span data-lang="en">Reliable AI agents and human control</span><span data-lang="es">Agentes de IA confiables y control humano</span></h3><p><span data-lang="en">Evaluation, bounded autonomy, recovery, and accountable decisions.</span><span data-lang="es">Evaluación, autonomía limitada, recuperación y decisiones responsables.</span></p></article>
+          <article class="direction"><small>Research direction / 02</small><h3><span data-lang="en">Operational intelligence over complex systems</span><span data-lang="es">Inteligencia operativa sobre sistemas complejos</span></h3><p><span data-lang="en">Making fragmented data, workflows, and events legible and actionable.</span><span data-lang="es">Volver legibles y accionables datos, flujos y eventos fragmentados.</span></p></article>
+          <article class="direction"><small>Research direction / 03</small><h3><span data-lang="en">Software that explains and recovers</span><span data-lang="es">Software que explica y se recupera</span></h3><p><span data-lang="en">Systems designed for traceability, controlled failure, and operational learning.</span><span data-lang="es">Sistemas diseñados para trazabilidad, falla controlada y aprendizaje operativo.</span></p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>Deauty Labs / Applied Research and Critical Systems</span>
+      <span>© 2026 Deauty Labs</span>
+      <a href="mailto:hello@deauty.tech">hello@deauty.tech</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

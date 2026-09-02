@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Start an Inquiry - Deauty Labs</title>
+  <meta name="description" content="Bring Deauty Labs the problem that does not fit a standard brief." />
+  <link rel="icon" href="assets/deauty-labs-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="lang-en">
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-symbol" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M27 10H13V26M13 38V54H27" fill="none" stroke="#EDF1F5" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M34 10H42L54 22V42L42 54H34" fill="none" stroke="#B9FF66" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+        </svg>
+        Deauty <span>Labs</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="practice.html"><span data-lang="en">Practice</span><span data-lang="es">Práctica</span></a></li>
+        <li><a href="critical.html"><span data-lang="en">Critical Systems</span><span data-lang="es">Sistemas Críticos</span></a></li>
+        <li><a href="cloud.html"><span data-lang="en">Cloud</span><span data-lang="es">Cloud</span></a></li>
+        <li><a href="research.html"><span data-lang="en">Research</span><span data-lang="es">Research</span></a></li>
+        <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+        <li><a href="collaborate.html"><span data-lang="en">Collaborate</span><span data-lang="es">Colaborar</span></a></li>
+        <li><a href="notes.html"><span data-lang="en">Notes</span><span data-lang="es">Notas</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div id="lang-toggle">
+          <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+          <button id="btn-es" onclick="setLang('es')">ES</button>
+        </div>
+        <a class="nav-cta" href="contact.html"><span data-lang="en">Bring us a hard problem</span><span data-lang="es">Traenos un problema difícil</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container page-nav">
+    <a class="back-link" href="index.html">&larr; <span data-lang="en">Back to home</span><span data-lang="es">Volver al inicio</span></a>
+  </div>
+
+  <main>
+    <section id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="eyebrow"><span data-lang="en">Start an inquiry</span><span data-lang="es">Iniciar una consulta</span></div>
+          <h2 class="section-title"><span data-lang="en">Bring us the problem that does not fit a standard brief.</span><span data-lang="es">Traenos el problema que no entra en un brief estándar.</span></h2>
+          <p class="section-lead"><span data-lang="en">Tell us what is unknown, what is at stake, and what a useful outcome would change.</span><span data-lang="es">Contanos qué se desconoce, qué está en juego y qué cambiaría un resultado útil.</span></p>
+        </div>
+        <div class="contact-email">
+          <span class="contact-email-label"><span data-lang="en">Email us directly</span><span data-lang="es">Escribinos directamente</span></span>
+          <a class="contact-email-link" href="mailto:hello@deauty.tech">hello@deauty.tech</a>
+          <p class="contact-email-note"><span data-lang="en">Do not include secrets or regulated records in the first message.</span><span data-lang="es">No incluyas secretos ni registros regulados en el primer mensaje.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>Deauty Labs / Applied Research and Critical Systems</span>
+      <span>© 2026 Deauty Labs</span>
+      <a href="mailto:hello@deauty.tech">hello@deauty.tech</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

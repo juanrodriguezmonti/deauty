@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Practice - Deauty Labs</title>
+  <meta name="description" content="Four modes of applied engineering: applied research, experimental systems, critical software, and intelligent systems." />
+  <link rel="icon" href="assets/deauty-labs-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="lang-en">
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-symbol" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M27 10H13V26M13 38V54H27" fill="none" stroke="#EDF1F5" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M34 10H42L54 22V42L42 54H34" fill="none" stroke="#B9FF66" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+        </svg>
+        Deauty <span>Labs</span>
+      </a>
+      <ul class="nav-links">
+        <li><a class="active" href="practice.html"><span data-lang="en">Practice</span><span data-lang="es">Práctica</span></a></li>
+        <li><a href="critical.html"><span data-lang="en">Critical Systems</span><span data-lang="es">Sistemas Críticos</span></a></li>
+        <li><a href="cloud.html"><span data-lang="en">Cloud</span><span data-lang="es">Cloud</span></a></li>
+        <li><a href="research.html"><span data-lang="en">Research</span><span data-lang="es">Research</span></a></li>
+        <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+        <li><a href="collaborate.html"><span data-lang="en">Collaborate</span><span data-lang="es">Colaborar</span></a></li>
+        <li><a href="notes.html"><span data-lang="en">Notes</span><span data-lang="es">Notas</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div id="lang-toggle">
+          <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+          <button id="btn-es" onclick="setLang('es')">ES</button>
+        </div>
+        <a class="nav-cta" href="contact.html"><span data-lang="en">Bring us a hard problem</span><span data-lang="es">Traenos un problema difícil</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container page-nav">
+    <a class="back-link" href="index.html">&larr; <span data-lang="en">Back to home</span><span data-lang="es">Volver al inicio</span></a>
+  </div>
+
+  <main>
+    <section id="practice">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow"><span data-lang="en">The practice</span><span data-lang="es">La práctica</span></div>
+          <h2 class="section-title"><span data-lang="en">Four modes of applied engineering.</span><span data-lang="es">Cuatro modos de ingeniería aplicada.</span></h2>
+          <p class="section-lead"><span data-lang="en">We combine investigation, experimentation, architecture, and implementation. The work may begin with a question, but it must end with usable knowledge or a working system.</span><span data-lang="es">Combinamos investigación, experimentación, arquitectura e implementación. El trabajo puede comenzar con una pregunta, pero debe terminar con conocimiento útil o un sistema funcionando.</span></p>
+        </div>
+        <div class="practice-grid reveal">
+          <article class="practice-item">
+            <span class="practice-index">PRACTICE / 01</span>
+            <h3><span data-lang="en">Applied Research</span><span data-lang="es">Research Aplicado</span></h3>
+            <p><span data-lang="en">Investigate a technical unknown, compare approaches, build evidence, and make a consequential decision with less uncertainty.</span><span data-lang="es">Investigar una incógnita técnica, comparar enfoques, construir evidencia y tomar una decisión importante con menos incertidumbre.</span></p>
+            <div class="practice-tags"><span class="tag">Feasibility</span><span class="tag">Benchmarks</span><span class="tag">Evaluations</span></div>
+          </article>
+          <article class="practice-item">
+            <span class="practice-index">PRACTICE / 02</span>
+            <h3><span data-lang="en">Experimental Systems</span><span data-lang="es">Sistemas Experimentales</span></h3>
+            <p><span data-lang="en">Explore emerging technology through working prototypes, instrumented pilots, and controlled experiments designed to generate learning.</span><span data-lang="es">Explorar tecnología emergente mediante prototipos funcionales, pilotos instrumentados y experimentos controlados diseñados para aprender.</span></p>
+            <div class="practice-tags"><span class="tag">Prototypes</span><span class="tag">AI Agents</span><span class="tag">New Interfaces</span></div>
+          </article>
+          <article class="practice-item">
+            <span class="practice-index">PRACTICE / 03</span>
+            <h3><span data-lang="en">Critical Software</span><span data-lang="es">Software Crítico</span></h3>
+            <p><span data-lang="en">Engineer systems where continuity, correctness, auditability, and controlled failure matter to the operation.</span><span data-lang="es">Diseñar sistemas donde la continuidad, corrección, trazabilidad y falla controlada importan para la operación.</span></p>
+            <div class="practice-tags"><span class="tag">Reliability</span><span class="tag">Traceability</span><span class="tag">Observability</span></div>
+          </article>
+          <article class="practice-item">
+            <span class="practice-index">PRACTICE / 04</span>
+            <h3><span data-lang="en">Intelligent Systems</span><span data-lang="es">Sistemas Inteligentes</span></h3>
+            <p><span data-lang="en">Build AI and autonomous capabilities that are evaluated, bounded, observable, and integrated into real systems.</span><span data-lang="es">Construir capacidades de IA y autonomía que estén evaluadas, limitadas, observables e integradas a sistemas reales.</span></p>
+            <div class="practice-tags"><span class="tag">AI Systems</span><span class="tag">Automation</span><span class="tag">Human Control</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>Deauty Labs / Applied Research and Critical Systems</span>
+      <span>© 2026 Deauty Labs</span>
+      <a href="mailto:hello@deauty.tech">hello@deauty.tech</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

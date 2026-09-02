@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Critical Systems - Deauty Labs</title>
+  <meta name="description" content="How Deauty Labs engineers software where failure has consequences: explicit failure modes, evidence before confidence, human authority where needed." />
+  <link rel="icon" href="assets/deauty-labs-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="lang-en">
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-symbol" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M27 10H13V26M13 38V54H27" fill="none" stroke="#EDF1F5" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M34 10H42L54 22V42L42 54H34" fill="none" stroke="#B9FF66" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+        </svg>
+        Deauty <span>Labs</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="practice.html"><span data-lang="en">Practice</span><span data-lang="es">Práctica</span></a></li>
+        <li><a class="active" href="critical.html"><span data-lang="en">Critical Systems</span><span data-lang="es">Sistemas Críticos</span></a></li>
+        <li><a href="cloud.html"><span data-lang="en">Cloud</span><span data-lang="es">Cloud</span></a></li>
+        <li><a href="research.html"><span data-lang="en">Research</span><span data-lang="es">Research</span></a></li>
+        <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+        <li><a href="collaborate.html"><span data-lang="en">Collaborate</span><span data-lang="es">Colaborar</span></a></li>
+        <li><a href="notes.html"><span data-lang="en">Notes</span><span data-lang="es">Notas</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div id="lang-toggle">
+          <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+          <button id="btn-es" onclick="setLang('es')">ES</button>
+        </div>
+        <a class="nav-cta" href="contact.html"><span data-lang="en">Bring us a hard problem</span><span data-lang="es">Traenos un problema difícil</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container page-nav">
+    <a class="back-link" href="index.html">&larr; <span data-lang="en">Back to home</span><span data-lang="es">Volver al inicio</span></a>
+  </div>
+
+  <main>
+    <section id="critical">
+      <div class="container critical-grid">
+        <div class="critical-copy reveal">
+          <div class="eyebrow"><span data-lang="en">Critical systems</span><span data-lang="es">Sistemas críticos</span></div>
+          <h2 class="section-title"><span data-lang="en">When software cannot be treated casually.</span><span data-lang="es">Cuando el software no puede tratarse con liviandad.</span></h2>
+          <p class="section-lead"><span data-lang="en">Critical does not only mean life-or-death. It means the system is consequential: failure interrupts operations, corrupts decisions, loses trust, or creates unacceptable risk.</span><span data-lang="es">Crítico no significa solamente vida o muerte. Significa que el sistema tiene consecuencias: una falla interrumpe operaciones, corrompe decisiones, pierde confianza o crea riesgo inaceptable.</span></p>
+          <ul class="critical-list">
+            <li><b>01</b><span><strong><span data-lang="en">Explicit failure modes</span><span data-lang="es">Modos de falla explícitos</span></strong><span data-lang="en">We design how the system degrades, recovers, and communicates uncertainty.</span><span data-lang="es">Diseñamos cómo el sistema degrada, se recupera y comunica incertidumbre.</span></span></li>
+            <li><b>02</b><span><strong><span data-lang="en">Evidence before confidence</span><span data-lang="es">Evidencia antes que confianza</span></strong><span data-lang="en">Testing, evaluation, simulation, and operational data support important claims.</span><span data-lang="es">Testing, evaluación, simulación y datos operativos respaldan afirmaciones importantes.</span></span></li>
+            <li><b>03</b><span><strong><span data-lang="en">Human authority where needed</span><span data-lang="es">Autoridad humana donde hace falta</span></strong><span data-lang="en">Automation remains bounded by clear controls, approvals, and accountability.</span><span data-lang="es">La automatización permanece limitada por controles, aprobaciones y responsabilidades claras.</span></span></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <div class="assurance-board">
+            <div class="board-title"><span>ASSURANCE_PROFILE</span><span>REV_06.26</span></div>
+            <div class="assurance-row"><span class="assurance-name">Correctness</span><span class="assurance-track"><i style="width:92%"></i></span><span class="assurance-state">EVIDENCE</span></div>
+            <div class="assurance-row"><span class="assurance-name">Continuity</span><span class="assurance-track"><i style="width:86%"></i></span><span class="assurance-state">DESIGNED</span></div>
+            <div class="assurance-row"><span class="assurance-name">Traceability</span><span class="assurance-track"><i style="width:96%"></i></span><span class="assurance-state">VISIBLE</span></div>
+            <div class="assurance-row"><span class="assurance-name">Recovery</span><span class="assurance-track"><i style="width:82%"></i></span><span class="assurance-state">TESTED</span></div>
+            <div class="assurance-row"><span class="assurance-name">Human control</span><span class="assurance-track"><i style="width:89%"></i></span><span class="assurance-state">BOUNDED</span></div>
+          </div>
+          <p class="boundary"><strong><span data-lang="en">Security boundary:</span><span data-lang="es">Límite de seguridad:</span></strong> <span data-lang="en">we engineer secure-by-design software and appropriate controls. We do not sell pentesting, security audits, or compliance certification; we collaborate with specialized teams when those are required.</span><span data-lang="es">construimos software secure-by-design y controles adecuados. No vendemos pentesting, auditorías de seguridad ni certificaciones de compliance; colaboramos con equipos especializados cuando se requieren.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>Deauty Labs / Applied Research and Critical Systems</span>
+      <span>© 2026 Deauty Labs</span>
+      <a href="mailto:hello@deauty.tech">hello@deauty.tech</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

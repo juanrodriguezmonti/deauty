@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Deauty Labs</title>
+  <meta name="description" content="Juan Rodríguez Monti, founder and CEO of Deauty Labs — background, talks, and publications." />
+  <link rel="icon" href="assets/deauty-labs-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="lang-en">
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-symbol" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M27 10H13V26M13 38V54H27" fill="none" stroke="#EDF1F5" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M34 10H42L54 22V42L42 54H34" fill="none" stroke="#B9FF66" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+        </svg>
+        Deauty <span>Labs</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="practice.html"><span data-lang="en">Practice</span><span data-lang="es">Práctica</span></a></li>
+        <li><a href="critical.html"><span data-lang="en">Critical Systems</span><span data-lang="es">Sistemas Críticos</span></a></li>
+        <li><a href="cloud.html"><span data-lang="en">Cloud</span><span data-lang="es">Cloud</span></a></li>
+        <li><a href="research.html"><span data-lang="en">Research</span><span data-lang="es">Research</span></a></li>
+        <li><a class="active" href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+        <li><a href="collaborate.html"><span data-lang="en">Collaborate</span><span data-lang="es">Colaborar</span></a></li>
+        <li><a href="notes.html"><span data-lang="en">Notes</span><span data-lang="es">Notas</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div id="lang-toggle">
+          <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+          <button id="btn-es" onclick="setLang('es')">ES</button>
+        </div>
+        <a class="nav-cta" href="contact.html"><span data-lang="en">Bring us a hard problem</span><span data-lang="es">Traenos un problema difícil</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container page-nav">
+    <a class="back-link" href="index.html">&larr; <span data-lang="en">Back to home</span><span data-lang="es">Volver al inicio</span></a>
+  </div>
+
+  <main>
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <div class="about-photo" aria-label="Juan Rodríguez Monti" style="background-image:url('assets/juan-photo.jpg')"></div>
+          <div class="eyebrow"><span data-lang="en">About us</span><span data-lang="es">Sobre nosotros</span></div>
+          <h2 class="section-title"><span data-lang="en">The person behind the lab.</span><span data-lang="es">La persona detrás del laboratorio.</span></h2>
+          <p class="about-bio">
+            <span data-lang="en">Juan Rodríguez Monti is the founder and CEO of Deauty Labs. Over two decades he has led engineering teams and architected cloud-native, security-focused systems &mdash; from leading software engineering for a team in Brussels to founding Fibona Software in Buenos Aires. He has taught computer science at UNNOBA, written for Linux Magazine and ACM, and organized Python conferences across two continents. He is the author of <strong class="signal">Complex Systems at Scale</strong>.</span>
+            <span data-lang="es">Juan Rodríguez Monti es fundador y CEO de Deauty Labs. Durante más de veinte años lideró equipos de ingeniería y diseñó sistemas cloud-native orientados a la seguridad &mdash; desde liderar ingeniería de software para un equipo en Bruselas hasta la fundación de Fibona Software en Buenos Aires. Dio clases de ciencias de la computación en la UNNOBA, escribió para Linux Magazine y ACM, y organizó conferencias de Python en dos continentes. Es autor de <strong class="signal">Complex Systems at Scale</strong>.</span>
+          </p>
+          <ul class="about-timeline">
+            <li><b>01</b><span>
+              <span class="about-date"><span data-lang="en">2024 &mdash; Present / Brussels</span><span data-lang="es">2024 &mdash; Presente / Bruselas</span></span>
+              <strong>Software Engineering Manager</strong>
+              <span data-lang="en">Full ownership of architecture, backend, frontend, cloud, and security for a team of 10 engineers.</span><span data-lang="es">Responsabilidad integral de arquitectura, backend, frontend, cloud y seguridad para un equipo de 10 ingenieros.</span>
+            </span></li>
+            <li><b>02</b><span>
+              <span class="about-date"><span data-lang="en">2017 &mdash; 2021 / Buenos Aires</span><span data-lang="es">2017 &mdash; 2021 / Buenos Aires</span></span>
+              <strong>CEO &amp; Founder, Fibona Software</strong>
+              <span data-lang="en">Co-founded and led a software development firm serving mid-to-large clients.</span><span data-lang="es">Cofundó y lideró una empresa de desarrollo de software para clientes medianos y grandes.</span>
+            </span></li>
+            <li><b>03</b><span>
+              <span class="about-date"><span data-lang="en">2012 &mdash; 2016 / Junín</span><span data-lang="es">2012 &mdash; 2016 / Junín</span></span>
+              <strong>Senior Engineering Manager, Lucnos Software</strong>
+              <span data-lang="en">Directed architecture for 20+ medium-to-large-scale web applications.</span><span data-lang="es">Dirigió la arquitectura de más de 20 aplicaciones web de mediana y gran escala.</span>
+            </span></li>
+            <li><b>04</b><span>
+              <span class="about-date"><span data-lang="en">2017 &mdash; 2023</span><span data-lang="es">2017 &mdash; 2023</span></span>
+              <strong><span data-lang="en">Professor</span><span data-lang="es">Profesor</span>, UNNOBA</strong>
+              <span data-lang="en">Taught computer science, data structures, and algorithms.</span><span data-lang="es">Profesor de ciencias de la computación, estructuras de datos y algoritmos.</span>
+            </span></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <div class="talks-board">
+            <div class="board-title"><span>TALKS_LOG</span><span>2016&ndash;2026</span></div>
+            <div class="talk-row"><span class="talk-event">PyCon ES<br />2016</span><span class="talk-title">Introducción a PyQt</span><span class="talk-status past"><span data-lang="en">Past</span><span data-lang="es">Pasada</span></span></div>
+            <div class="talk-row"><span class="talk-event">PyCon ES<br />2016</span><span class="talk-title">Mi experiencia organizando eventos Python usando Python!</span><span class="talk-status past"><span data-lang="en">Past</span><span data-lang="es">Pasada</span></span></div>
+            <div class="talk-row"><span class="talk-event">Nerdearla<br />2024</span><span class="talk-title">De Flask a FastAPI: migrando hacia un backend moderno con Python</span><span class="talk-status past"><span data-lang="en">Past</span><span data-lang="es">Pasada</span></span></div>
+            <div class="talk-row"><span class="talk-event">Nerdearla<br />2025</span><span class="talk-title">Seguridad desde el código y pentesting de infraestructura, APIs y aplicaciones web</span><span class="talk-status past"><span data-lang="en">Past</span><span data-lang="es">Pasada</span></span></div>
+            <div class="talk-row"><span class="talk-event">Nerdearla<br />2026</span><span class="talk-title">No sos Netflix. Cuando tu sistema no necesita escalar a un millón de usuarios.</span><span class="talk-status upcoming"><span data-lang="en">Upcoming</span><span data-lang="es">Próxima</span></span></div>
+            <div class="talk-row"><span class="talk-event">PyCon ES 2026<br />Barcelona</span><span class="talk-title">Diseñando arquitecturas reales. Cuando tu sistema no necesita escalar a un millón de usuarios.</span><span class="talk-status upcoming"><span data-lang="en">Upcoming</span><span data-lang="es">Próxima</span></span></div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover" aria-label="Complex Systems at Scale — book cover" style="background-image:url('assets/book-cover.jpg')"></div>
+            <span class="tag">Book</span>
+            <h4>Complex Systems at Scale</h4>
+            <p><span data-lang="en">A practitioner's guide from early architecture decisions to production security and AI-native systems &mdash; Next.js, FastAPI, and AWS. By Juan Rodríguez Monti.</span><span data-lang="es">Una guía práctica desde las primeras decisiones de arquitectura hasta la seguridad en producción y los sistemas AI-native &mdash; Next.js, FastAPI y AWS. Por Juan Rodríguez Monti.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>Deauty Labs / Applied Research and Critical Systems</span>
+      <span>© 2026 Deauty Labs</span>
+      <a href="mailto:hello@deauty.tech">hello@deauty.tech</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

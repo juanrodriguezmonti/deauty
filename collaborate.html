@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ways to Collaborate - Deauty Labs</title>
+  <meta name="description" content="Research programs, critical builds, and embedded lab engagements with Deauty Labs." />
+  <link rel="icon" href="assets/deauty-labs-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="lang-en">
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-symbol" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M27 10H13V26M13 38V54H27" fill="none" stroke="#EDF1F5" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M34 10H42L54 22V42L42 54H34" fill="none" stroke="#B9FF66" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+        </svg>
+        Deauty <span>Labs</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="practice.html"><span data-lang="en">Practice</span><span data-lang="es">Práctica</span></a></li>
+        <li><a href="critical.html"><span data-lang="en">Critical Systems</span><span data-lang="es">Sistemas Críticos</span></a></li>
+        <li><a href="cloud.html"><span data-lang="en">Cloud</span><span data-lang="es">Cloud</span></a></li>
+        <li><a href="research.html"><span data-lang="en">Research</span><span data-lang="es">Research</span></a></li>
+        <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+        <li><a class="active" href="collaborate.html"><span data-lang="en">Collaborate</span><span data-lang="es">Colaborar</span></a></li>
+        <li><a href="notes.html"><span data-lang="en">Notes</span><span data-lang="es">Notas</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div id="lang-toggle">
+          <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+          <button id="btn-es" onclick="setLang('es')">ES</button>
+        </div>
+        <a class="nav-cta" href="contact.html"><span data-lang="en">Bring us a hard problem</span><span data-lang="es">Traenos un problema difícil</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container page-nav">
+    <a class="back-link" href="index.html">&larr; <span data-lang="en">Back to home</span><span data-lang="es">Volver al inicio</span></a>
+  </div>
+
+  <main>
+    <section id="collaborate">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow"><span data-lang="en">Ways to collaborate</span><span data-lang="es">Formas de colaborar</span></div>
+          <h2 class="section-title"><span data-lang="en">Choose the shape of the problem, not a service package.</span><span data-lang="es">Elegí la forma del problema, no un paquete de servicios.</span></h2>
+          <p class="section-lead"><span data-lang="en">The engagement depends on what is unknown, what is at stake, and how far the system needs to travel.</span><span data-lang="es">La colaboración depende de qué se desconoce, qué está en juego y hasta dónde debe llegar el sistema.</span></p>
+        </div>
+        <div class="collab-grid reveal">
+          <article class="collab">
+            <span class="collab-type">Research Program</span>
+            <h3><span data-lang="en">Resolve a technical unknown.</span><span data-lang="es">Resolver una incógnita técnica.</span></h3>
+            <p><span data-lang="en">For consequential questions where a prototype, benchmark, evaluation, or architecture experiment must produce credible evidence.</span><span data-lang="es">Para preguntas importantes donde un prototipo, benchmark, evaluación o experimento de arquitectura debe producir evidencia creíble.</span></p>
+            <ul><li>Research framing</li><li>Instrumented experiments</li><li>Evidence and recommendation</li></ul>
+          </article>
+          <article class="collab">
+            <span class="collab-type">Critical Build</span>
+            <h3><span data-lang="en">Engineer a system that matters.</span><span data-lang="es">Diseñar un sistema que importa.</span></h3>
+            <p><span data-lang="en">For new or existing software that requires deeper architecture, disciplined implementation, controlled rollout, and operational confidence.</span><span data-lang="es">Para software nuevo o existente que requiere arquitectura profunda, implementación disciplinada, rollout controlado y confianza operativa.</span></p>
+            <ul><li>Architecture and implementation</li><li>Assurance and observability</li><li>Production rollout</li></ul>
+          </article>
+          <article class="collab">
+            <span class="collab-type">Embedded Lab</span>
+            <h3><span data-lang="en">Create a continuous frontier.</span><span data-lang="es">Crear una frontera continua.</span></h3>
+            <p><span data-lang="en">For organizations that need an ongoing applied research and senior engineering capability alongside their internal team.</span><span data-lang="es">Para organizaciones que necesitan una capacidad continua de research aplicado e ingeniería senior junto a su equipo interno.</span></p>
+            <ul><li>Ongoing investigation</li><li>System evolution</li><li>Technical decision support</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>Deauty Labs / Applied Research and Critical Systems</span>
+      <span>© 2026 Deauty Labs</span>
+      <a href="mailto:hello@deauty.tech">hello@deauty.tech</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
