@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Deauty Labs mark</title>
+  <path d="M27 10H13V26M13 38V54H27" fill="none" stroke="#EDF1F5" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M34 10H42L54 22V42L42 54H34" fill="none" stroke="#B9FF66" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>
