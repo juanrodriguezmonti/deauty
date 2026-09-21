@@ -24,11 +24,12 @@
       <ul class="nav-links">
         <li><a href="practice.html"><span data-lang="en">Practice</span><span data-lang="es">Práctica</span></a></li>
         <li><a href="critical.html"><span data-lang="en">Critical Systems</span><span data-lang="es">Sistemas Críticos</span></a></li>
-        <li><a class="active" href="cloud.html"><span data-lang="en">Cloud</span><span data-lang="es">Cloud</span></a></li>
+        <li><a href="cloud.html"><span data-lang="en">Cloud</span><span data-lang="es">Cloud</span></a></li>
         <li><a href="research.html"><span data-lang="en">Research</span><span data-lang="es">Research</span></a></li>
         <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
-        <li><a href="collaborate.html"><span data-lang="en">Collaborate</span><span data-lang="es">Colaborar</span></a></li>
-        <li><a href="notes.html"><span data-lang="en">Notes</span><span data-lang="es">Notas</span></a></li>
+        <li><a href="clients.html"><span data-lang="en">Clients</span><span data-lang="es">Clientes</span></a></li>
+        <li><a href="security.html"><span data-lang="en">Security</span><span data-lang="es">Seguridad</span></a></li>
+        <li><a href="media.html"><span data-lang="en">Media</span><span data-lang="es">Medios</span></a></li>
       </ul>
       <div class="nav-actions">
         <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
@@ -113,18 +114,18 @@
           <h2 class="section-title"><span data-lang="en">Security, compliance, scalability, and cost &mdash; by design.</span><span data-lang="es">Seguridad, compliance, escalabilidad y costo &mdash; por diseño.</span></h2>
           <ul class="critical-list">
             <li><b>01</b><span><strong><span data-lang="en">Security &amp; compliance</span><span data-lang="es">Seguridad y compliance</span></strong><span data-lang="en">IAM least privilege, encryption at rest and in transit, VPC segmentation, GuardDuty and Security Hub, WAF in front of public endpoints. We map controls to frameworks like SOC 2 and ISO 27001 when compliance is part of the requirement.</span><span data-lang="es">IAM de mínimo privilegio, cifrado en reposo y en tránsito, segmentación de VPC, GuardDuty y Security Hub, WAF frente a endpoints públicos. Mapeamos controles a frameworks como SOC 2 e ISO 27001 cuando el compliance es parte del requisito.</span></span></li>
-            <li><b>02</b><span><strong><span data-lang="en">Scalability &amp; resilience</span><span data-lang="es">Escalabilidad y resiliencia</span></strong><span data-lang="en">Auto-scaling groups, multi-AZ deployments, serverless-first for unpredictable load, caching and CDN at the edge. Systems are designed to absorb spikes without paging anyone.</span><span data-lang="es">Auto-scaling groups, despliegues multi-AZ, serverless-first para carga impredecible, caching y CDN en el borde. Los sistemas están diseñados para absorber picos sin despertar a nadie.</span></span></li>
+            <li><b>02</b><span><strong><span data-lang="en">Scalability &amp; resilience</span><span data-lang="es">Escalabilidad y resiliencia</span></strong><span data-lang="en">Auto-scaling groups, multi-AZ deployments, serverless options for unpredictable load, caching, and edge delivery. Capacity policies and graceful degradation are defined against expected operating conditions.</span><span data-lang="es">Auto-scaling groups, despliegues multi-AZ, opciones serverless para carga impredecible, caching y distribución en el borde. Las políticas de capacidad y degradación controlada se definen según las condiciones operativas esperadas.</span></span></li>
             <li><b>03</b><span><strong><span data-lang="en">Cost monitoring &amp; FinOps</span><span data-lang="es">Monitoreo de costos y FinOps</span></strong><span data-lang="en">Budgets and anomaly alerts from the first deploy, resource tagging for attribution, regular right-sizing, and Reserved/Savings Plans reviews. Cost visibility is a deliverable, not an afterthought.</span><span data-lang="es">Budgets y alertas de anomalías desde el primer deploy, tagging de recursos para atribución, right-sizing regular y revisiones de Reserved/Savings Plans. La visibilidad de costos es un entregable, no algo posterior.</span></span></li>
           </ul>
         </div>
         <div class="reveal">
-          <div class="assurance-board">
-            <div class="board-title"><span>CLOUD_ASSURANCE</span><span>REV_06.26</span></div>
-            <div class="assurance-row"><span class="assurance-name"><span data-lang="en">Security</span><span data-lang="es">Seguridad</span></span><span class="assurance-track"><i style="width:94%"></i></span><span class="assurance-state">HARDENED</span></div>
-            <div class="assurance-row"><span class="assurance-name"><span data-lang="en">Compliance</span><span data-lang="es">Compliance</span></span><span class="assurance-track"><i style="width:88%"></i></span><span class="assurance-state">MAPPED</span></div>
-            <div class="assurance-row"><span class="assurance-name"><span data-lang="en">Scalability</span><span data-lang="es">Escalabilidad</span></span><span class="assurance-track"><i style="width:91%"></i></span><span class="assurance-state">ELASTIC</span></div>
-            <div class="assurance-row"><span class="assurance-name"><span data-lang="en">Cost control</span><span data-lang="es">Control de costos</span></span><span class="assurance-track"><i style="width:85%"></i></span><span class="assurance-state">TRACKED</span></div>
-            <div class="assurance-row"><span class="assurance-name"><span data-lang="en">Observability</span><span data-lang="es">Observabilidad</span></span><span class="assurance-track"><i style="width:93%"></i></span><span class="assurance-state">INSTRUMENTED</span></div>
+          <div class="cloud-control-board">
+            <div class="board-title"><span>CLOUD_ASSURANCE</span><span>DESIGN_CHECK</span></div>
+            <div class="control-row"><b><span data-lang="en">Security</span><span data-lang="es">Seguridad</span></b><span>IAM · KMS · WAF · NETWORK</span><i>BASELINE</i></div>
+            <div class="control-row"><b>Compliance</b><span><span data-lang="en">CONTROL MAP · EVIDENCE</span><span data-lang="es">MAPA DE CONTROLES · EVIDENCIA</span></span><i>TRACEABLE</i></div>
+            <div class="control-row"><b><span data-lang="en">Resilience</span><span data-lang="es">Resiliencia</span></b><span>MULTI-AZ · SCALE · RECOVERY</span><i>DESIGNED</i></div>
+            <div class="control-row"><b><span data-lang="en">Cost</span><span data-lang="es">Costo</span></b><span>TAGGING · BUDGETS · ANOMALIES</span><i>VISIBLE</i></div>
+            <div class="control-row"><b><span data-lang="en">Operations</span><span data-lang="es">Operación</span></b><span>LOGS · TRACES · ALERTS</span><i>OBSERVABLE</i></div>
           </div>
           <p class="boundary"><strong><span data-lang="en">Multi-cloud note:</span><span data-lang="es">Nota multi-cloud:</span></strong> <span data-lang="en">AWS is our primary platform, but we are not locked into it. We work with GCP and Azure when existing infrastructure, client requirements, or specific managed services make that the right call.</span><span data-lang="es">AWS es nuestra plataforma principal, pero no estamos atados a ella. Trabajamos con GCP y Azure cuando la infraestructura existente, los requisitos del cliente o servicios administrados específicos hacen que sea la decisión correcta.</span></p>
         </div>

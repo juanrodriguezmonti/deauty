@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security - Deauty Labs</title>
+  <meta name="description" content="Application security, penetration testing, API abuse testing, mobile assessment, and controlled security engineering by Deauty Labs." />
+  <link rel="icon" href="assets/deauty-labs-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="lang-en">
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><svg class="brand-symbol" viewBox="0 0 64 64" aria-hidden="true"><path d="M27 10H13V26M13 38V54H27" fill="none" stroke="#EDF1F5" stroke-width="6"/><path d="M34 10H42L54 22V42L42 54H34" fill="none" stroke="#B9FF66" stroke-width="6"/></svg>Deauty <span>Labs</span></a>
+      <ul class="nav-links">
+        <li><a href="practice.html"><span data-lang="en">Practice</span><span data-lang="es">Práctica</span></a></li>
+        <li><a href="critical.html"><span data-lang="en">Critical Systems</span><span data-lang="es">Sistemas Críticos</span></a></li>
+        <li><a href="cloud.html"><span data-lang="en">Cloud</span><span data-lang="es">Cloud</span></a></li>
+        <li><a href="research.html"><span data-lang="en">Research</span><span data-lang="es">Research</span></a></li>
+        <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+        <li><a href="clients.html"><span data-lang="en">Clients</span><span data-lang="es">Clientes</span></a></li>
+        <li><a href="security.html"><span data-lang="en">Security</span><span data-lang="es">Seguridad</span></a></li>
+        <li><a href="media.html"><span data-lang="en">Media</span><span data-lang="es">Medios</span></a></li>
+      </ul>
+      <div class="nav-actions"><button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div id="lang-toggle"><button id="btn-en" class="active" onclick="setLang('en')">EN</button><button id="btn-es" onclick="setLang('es')">ES</button></div><a class="nav-cta" href="contact.html"><span data-lang="en">Bring us a hard problem</span><span data-lang="es">Traenos un problema difícil</span></a></div>
+    </div>
+  </nav>
+
+  <div class="container page-nav"><a class="back-link" href="index.html">&larr; <span data-lang="en">Back to home</span><span data-lang="es">Volver al inicio</span></a></div>
+
+  <main>
+    <section class="security-hero">
+      <div class="container security-hero-grid">
+        <div>
+          <div class="hero-kicker"><i class="pulse"></i><span data-lang="en">Offensive security / application assurance</span><span data-lang="es">Seguridad ofensiva / assurance de aplicaciones</span></div>
+          <h1 class="section-title"><span data-lang="en">Security testing for systems that have to keep working.</span><span data-lang="es">Pruebas de seguridad para sistemas que tienen que seguir funcionando.</span></h1>
+          <p class="section-lead"><span data-lang="en">We assess real attack paths across Web, Mobile, APIs, business logic, and the Cloud controls around them. Automated tools support the work; they do not replace manual validation or engineering judgment.</span><span data-lang="es">Evaluamos caminos de ataque reales en Web, Mobile, APIs, lógica de negocio y los controles Cloud que los rodean. Las herramientas automáticas apoyan el trabajo; no reemplazan la validación manual ni el criterio de ingeniería.</span></p>
+        </div>
+        <div class="security-console">
+          <div class="case-head"><span>DEAUTY_LAB / SECURITY_SURFACE</span><span>MODE: GRAY_BOX</span></div>
+          <div class="security-line"><b>WEB-01</b><span>AUTH · SESSION · INPUT · ACCESS</span><i>TEST</i></div>
+          <div class="security-line"><b>MOB-02</b><span>STORAGE · TLS · DEEP LINKS · API</span><i>TEST</i></div>
+          <div class="security-line"><b>API-03</b><span>BOLA · IDOR · REPLAY · LOGIC</span><i>TEST</i></div>
+          <div class="security-line"><b>OPS-04</b><span>WAF · RATE LIMIT · CONCURRENCY</span><i>VERIFY</i></div>
+          <div class="case-foot"><span>AUTHORIZED SCOPE ONLY</span><span class="case-status">MANUAL VALIDATION</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="security-scope">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow"><span data-lang="en">Assessment surface</span><span data-lang="es">Superficie de evaluación</span></div><h2 class="section-title"><span data-lang="en">From interface to invariant.</span><span data-lang="es">De la interfaz al invariante.</span></h2></div>
+        <div class="scope-grid">
+          <article><span class="scope-id">01 / WEB</span><h3><span data-lang="en">Web applications</span><span data-lang="es">Aplicaciones Web</span></h3><p><span data-lang="en">Authentication, authorization, sessions, access control, input handling, SSRF, information exposure, configuration, and business logic.</span><span data-lang="es">Autenticación, autorización, sesiones, control de acceso, validación de entradas, SSRF, exposición de información, configuración y lógica de negocio.</span></p></article>
+          <article><span class="scope-id">02 / MOBILE</span><h3><span data-lang="en">Android and iOS</span><span data-lang="es">Android e iOS</span></h3><p><span data-lang="en">Local storage, embedded secrets, TLS behavior, deep links, request manipulation, backend communication, and authorization across roles.</span><span data-lang="es">Almacenamiento local, secretos embebidos, comportamiento TLS, deep links, manipulación de requests, comunicación con backend y autorización entre perfiles.</span></p></article>
+          <article><span class="scope-id">03 / API</span><h3>APIs</h3><p><span data-lang="en">Endpoint coverage, BOLA/IDOR, object- and function-level access, parameter tampering, replay, integrity, and backend business logic.</span><span data-lang="es">Cobertura de endpoints, BOLA/IDOR, acceso a objetos y funciones, manipulación de parámetros, replay, integridad y lógica de negocio backend.</span></p></article>
+          <article><span class="scope-id">04 / ABUSE</span><h3><span data-lang="en">Controls under pressure</span><span data-lang="es">Controles bajo presión</span></h3><p><span data-lang="en">Rate limiting and throttling across WAF, gateway, and application layers; burst behavior, bypass paths, race conditions, atomicity, and idempotency.</span><span data-lang="es">Rate limiting y throttling en WAF, gateway y aplicación; bursts, caminos de bypass, race conditions, atomicidad e idempotencia.</span></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="security-method-section">
+      <div class="container security-method-grid">
+        <div><div class="eyebrow"><span data-lang="en">Method</span><span data-lang="es">Método</span></div><h2 class="section-title"><span data-lang="en">Controlled, manual, reproducible.</span><span data-lang="es">Controlado, manual, reproducible.</span></h2><p class="section-lead"><span data-lang="en">The objective is not to produce a long scanner export. It is to determine whether a weakness is real, what it permits, and what should be fixed first.</span><span data-lang="es">El objetivo no es producir una exportación larga de un scanner. Es determinar si una debilidad es real, qué permite y qué debe corregirse primero.</span></p></div>
+        <ol class="method-list">
+          <li><b>01</b><div><strong><span data-lang="en">Scope and rules</span><span data-lang="es">Alcance y reglas</span></strong><span data-lang="en">Authorized systems, accounts, windows, escalation contacts, and explicit stop conditions.</span><span data-lang="es">Sistemas autorizados, cuentas, ventanas, contactos de escalamiento y condiciones explícitas de interrupción.</span></div></li>
+          <li><b>02</b><div><strong><span data-lang="en">Discovery and modeling</span><span data-lang="es">Descubrimiento y modelado</span></strong><span data-lang="en">Flows, trust boundaries, roles, assets, endpoints, and operations where failure matters.</span><span data-lang="es">Flujos, límites de confianza, perfiles, activos, endpoints y operaciones donde una falla importa.</span></div></li>
+          <li><b>03</b><div><strong><span data-lang="en">Controlled exploitation</span><span data-lang="es">Explotación controlada</span></strong><span data-lang="en">Manual confirmation with the minimum impact needed to establish risk.</span><span data-lang="es">Confirmación manual con el impacto mínimo necesario para establecer el riesgo.</span></div></li>
+          <li><b>04</b><div><strong><span data-lang="en">Remediation and retest</span><span data-lang="es">Remediación y retest</span></strong><span data-lang="en">Prioritized fixes, reproducible evidence, engineering guidance, and validation of corrected findings.</span><span data-lang="es">Correcciones priorizadas, evidencia reproducible, guía de ingeniería y validación de hallazgos corregidos.</span></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="security-deliverables">
+      <div class="container deliverables-grid">
+        <div><div class="eyebrow"><span data-lang="en">Deliverables</span><span data-lang="es">Entregables</span></div><h2 class="section-title"><span data-lang="en">Useful to decision-makers and engineers.</span><span data-lang="es">Útiles para quienes deciden y quienes corrigen.</span></h2></div>
+        <div class="deliverable-board">
+          <div><b>EXEC</b><span><strong><span data-lang="en">Executive summary</span><span data-lang="es">Resumen ejecutivo</span></strong><small><span data-lang="en">Risk, impact, and ordered decisions.</span><span data-lang="es">Riesgo, impacto y decisiones ordenadas.</span></small></span></div>
+          <div><b>TECH</b><span><strong><span data-lang="en">Technical findings</span><span data-lang="es">Hallazgos técnicos</span></strong><small><span data-lang="en">Severity, evidence, reproduction, and concrete remediation.</span><span data-lang="es">Severidad, evidencia, reproducción y remediación concreta.</span></small></span></div>
+          <div><b>LIVE</b><span><strong><span data-lang="en">Critical communication</span><span data-lang="es">Comunicación crítica</span></strong><small><span data-lang="en">High-impact findings are raised during execution, not buried in the final report.</span><span data-lang="es">Los hallazgos de alto impacto se comunican durante la ejecución, no quedan enterrados en el informe final.</span></small></span></div>
+          <div><b>RETEST</b><span><strong><span data-lang="en">Remediation validation</span><span data-lang="es">Validación de remediaciones</span></strong><small><span data-lang="en">A focused retest confirms whether the original attack path is closed.</span><span data-lang="es">Un retest enfocado confirma si el camino de ataque original quedó cerrado.</span></small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact"><div class="container contact-grid"><div><div class="eyebrow"><span data-lang="en">Start securely</span><span data-lang="es">Empezar de forma segura</span></div><h2 class="section-title"><span data-lang="en">Define the risk before testing the system.</span><span data-lang="es">Definamos el riesgo antes de probar el sistema.</span></h2><p class="section-lead"><span data-lang="en">We can help shape the scope, environment, access model, and rules of engagement before proposing an assessment.</span><span data-lang="es">Podemos ayudar a definir alcance, ambiente, modelo de acceso y reglas de ejecución antes de proponer una evaluación.</span></p></div><div class="contact-email"><span class="contact-email-label"><span data-lang="en">Email us directly</span><span data-lang="es">Escribinos directamente</span></span><a class="contact-email-link" href="mailto:hello@deauty.tech">hello@deauty.tech</a><p class="contact-email-note"><span data-lang="en">Do not include credentials, secrets, or sensitive evidence in the first message.</span><span data-lang="es">No incluyas credenciales, secretos ni evidencia sensible en el primer mensaje.</span></p></div></div></section>
+  </main>
+
+  <footer><div class="container footer-inner"><span>Deauty Labs / Applied Research and Critical Systems</span><span>© 2026 Deauty Labs</span><a href="mailto:hello@deauty.tech">hello@deauty.tech</a></div></footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

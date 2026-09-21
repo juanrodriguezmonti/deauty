@@ -23,12 +23,13 @@
       </a>
       <ul class="nav-links">
         <li><a href="practice.html"><span data-lang="en">Practice</span><span data-lang="es">Práctica</span></a></li>
-        <li><a class="active" href="critical.html"><span data-lang="en">Critical Systems</span><span data-lang="es">Sistemas Críticos</span></a></li>
+        <li><a href="critical.html"><span data-lang="en">Critical Systems</span><span data-lang="es">Sistemas Críticos</span></a></li>
         <li><a href="cloud.html"><span data-lang="en">Cloud</span><span data-lang="es">Cloud</span></a></li>
         <li><a href="research.html"><span data-lang="en">Research</span><span data-lang="es">Research</span></a></li>
         <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
-        <li><a href="collaborate.html"><span data-lang="en">Collaborate</span><span data-lang="es">Colaborar</span></a></li>
-        <li><a href="notes.html"><span data-lang="en">Notes</span><span data-lang="es">Notas</span></a></li>
+        <li><a href="clients.html"><span data-lang="en">Clients</span><span data-lang="es">Clientes</span></a></li>
+        <li><a href="security.html"><span data-lang="en">Security</span><span data-lang="es">Seguridad</span></a></li>
+        <li><a href="media.html"><span data-lang="en">Media</span><span data-lang="es">Medios</span></a></li>
       </ul>
       <div class="nav-actions">
         <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
@@ -61,15 +62,16 @@
           </ul>
         </div>
         <div class="reveal">
-          <div class="assurance-board">
-            <div class="board-title"><span>ASSURANCE_PROFILE</span><span>REV_06.26</span></div>
-            <div class="assurance-row"><span class="assurance-name">Correctness</span><span class="assurance-track"><i style="width:92%"></i></span><span class="assurance-state">EVIDENCE</span></div>
-            <div class="assurance-row"><span class="assurance-name">Continuity</span><span class="assurance-track"><i style="width:86%"></i></span><span class="assurance-state">DESIGNED</span></div>
-            <div class="assurance-row"><span class="assurance-name">Traceability</span><span class="assurance-track"><i style="width:96%"></i></span><span class="assurance-state">VISIBLE</span></div>
-            <div class="assurance-row"><span class="assurance-name">Recovery</span><span class="assurance-track"><i style="width:82%"></i></span><span class="assurance-state">TESTED</span></div>
-            <div class="assurance-row"><span class="assurance-name">Human control</span><span class="assurance-track"><i style="width:89%"></i></span><span class="assurance-state">BOUNDED</span></div>
+          <div class="resilience-loop">
+            <div class="board-title"><span>RESILIENCE_LOOP</span><span>DESIGN / OPERATE</span></div>
+            <div class="loop-stage"><b>01</b><span><strong><span data-lang="en">Prevent</span><span data-lang="es">Prevenir</span></strong><small><span data-lang="en">Boundaries · validation · least privilege</span><span data-lang="es">Límites · validación · mínimo privilegio</span></small></span></div>
+            <div class="loop-stage"><b>02</b><span><strong><span data-lang="en">Detect</span><span data-lang="es">Detectar</span></strong><small><span data-lang="en">Signals · traces · operational context</span><span data-lang="es">Señales · trazas · contexto operativo</span></small></span></div>
+            <div class="loop-stage"><b>03</b><span><strong><span data-lang="en">Contain</span><span data-lang="es">Contener</span></strong><small><span data-lang="en">Isolation · limits · controlled degradation</span><span data-lang="es">Aislamiento · límites · degradación controlada</span></small></span></div>
+            <div class="loop-stage"><b>04</b><span><strong><span data-lang="en">Recover</span><span data-lang="es">Recuperar</span></strong><small><span data-lang="en">Runbooks · rollback · state restoration</span><span data-lang="es">Runbooks · rollback · restauración de estado</span></small></span></div>
+            <div class="loop-stage"><b>05</b><span><strong><span data-lang="en">Learn</span><span data-lang="es">Aprender</span></strong><small><span data-lang="en">Evidence · review · system change</span><span data-lang="es">Evidencia · revisión · cambio del sistema</span></small></span></div>
+            <div class="loop-foot"><span>FAILURE ≠ SURPRISE</span><span>RECOVERY: DESIGNED</span></div>
           </div>
-          <p class="boundary"><strong><span data-lang="en">Security boundary:</span><span data-lang="es">Límite de seguridad:</span></strong> <span data-lang="en">we engineer secure-by-design software and appropriate controls. We do not sell pentesting, security audits, or compliance certification; we collaborate with specialized teams when those are required.</span><span data-lang="es">construimos software secure-by-design y controles adecuados. No vendemos pentesting, auditorías de seguridad ni certificaciones de compliance; colaboramos con equipos especializados cuando se requieren.</span></p>
+          <p class="boundary"><strong><span data-lang="en">Security boundary:</span><span data-lang="es">Límite de seguridad:</span></strong> <span data-lang="en">we engineer secure-by-design systems and perform focused application security assessments. Formal certification and independent compliance audits remain separate specialties.</span><span data-lang="es">diseñamos sistemas secure-by-design y realizamos evaluaciones focalizadas de seguridad de aplicaciones. Las certificaciones formales y auditorías independientes de compliance siguen siendo especialidades separadas.</span> <a href="security.html"><span data-lang="en">See security capabilities →</span><span data-lang="es">Ver capacidades de seguridad →</span></a></p>
         </div>
       </div>
     </section>
